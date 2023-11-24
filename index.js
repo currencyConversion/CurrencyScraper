@@ -33,6 +33,7 @@ const parseRates = async () => {
     const browser = await puppeteer.launch({
         headless: true,
         defaultViewport: null,
+        timeout: 0,
     });
 
     // Open a new page
